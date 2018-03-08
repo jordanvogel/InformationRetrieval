@@ -1,0 +1,39 @@
+query: Stemming
+answer: [doc1, doc2, doc3, doc4]
+
+query: Stemming
+answer: [doc1, doc2, doc3, doc4]
+
+query: system AND recall
+answer: [doc2]
+
+query: system OR vocabulary
+answer: [doc1, doc2, doc3]
+
+query: system AND (recall OR precision)
+answer: [doc1, doc2]
+
+query: (recall OR precision) AND system
+answer: [doc1, doc2]
+
+query: time OR (precision AND while)
+answer: [doc4]
+
+query: (precision AND while) OR time
+answer: [doc4]
+
+query: system OR vocabulary OR time
+answer: [doc1, doc2, doc3, doc4]
+
+query: system AND never AND precision
+answer: [doc1]
+
+query: system OR vocabulary OR while AND at OR should
+answer: [doc4]
+
+query: "stemming should" OR "stemming increases"
+answer: [doc3, doc4]
+
+query: "stemming never" AND "stemming increases"
+answer: []
+
